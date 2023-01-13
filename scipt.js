@@ -6,3 +6,21 @@ function getComputerChoice() {
      let index = Math.floor(Math.random()*3);
      return computerOptions[index];
 }
+
+function playerSelection(){
+    let handShape = prompt("Enter your hand shape!");
+    if (handShape.toLowerCase() === "rock"){
+      return handShape.toLowerCase();
+    }
+    else if (handShape.toLowerCase() === "paper"){
+      return handShape.toLowerCase();
+    }
+    else if (handShape.toLowerCase() === "scissors"){
+      return handShape.toLowerCase();
+    }
+    else{
+      return "please enter hand shape";
+    }
+  }
+
+  
