@@ -1,5 +1,5 @@
 # Rock-Paper-Scissors
-The project is all about a game also know as orderings of items ('rock','papper' and 'scissors')
+The project is all about a game also known as orderings of items ('rock','papper' and 'scissors')
 
 This is hand game originating in china usually played between two people, in which each player simultaneously forms of three shapes with an outstretched hand.
 
