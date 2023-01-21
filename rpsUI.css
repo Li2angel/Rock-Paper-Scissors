@@ -1,0 +1,111 @@
+:root{
+    --back-color: #344C11;
+    --button-color: #1A2902;
+    --text-color: #AEC09A;
+    --transparent: #778D45;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--back-color);
+    color: #AEC09A;
+    flex-wrap: wrap;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #1A2902;
+    transition: all 0.4s ease;
+    width: 400px;
+    height: 90%;
+    padding-top: 15px;
+    box-shadow: 5px 5px 20px var(--text-color);
+    border-radius: 10px;
+}
+.pix img{
+    width: 100%;
+    height: auto;
+    flex: 1;
+    margin-top: 15px;
+}
+.game-container{
+    padding: 20px 0 60px;
+    text-align: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.output,
+.final-result{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.play{
+    flex: 1;
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+.play > button {
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 10px;
+    background: var(--transparent);
+    color: var(--button-color);
+    border: none;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+.play button:hover{
+    opacity: 0.8;
+    color: #fff;
+    background-color: #1A2902;
+    border: 1px solid var(--transparent);
+}
+table{
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    border-collapse: collapse;
+}
+th{
+    background: var(--back-color);
+    padding: 5px 10px;
+}
+td{
+    text-align: center;
+}
+.playAgain{
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 10px;
+    border: 1px solid var(--transparent);
+    cursor: pointer;
+    background-color: var(--button-color);
+    color: var(--text-color);
+    font-weight: 700;
+    transition: all 0.4s ease-in-out;
+}
+.playAgain:hover{
+    background: var(--text-color);
+    color: #1A2902;
+}
+
+.showButton{
+    display: none;
+}

@@ -4,9 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="rpsUi.js" defer></script>
+    <link rel="stylesheet" href="rpsUI.css">
     <title>Document</title>
 </head>
 <body>
-    <script src="scipt.js"></script>
+    <div class="container">
+        <h2>Rock-Paper-Scissors Game</h2>
+        <div class="pix">
+            <img src="rock.png" alt="">
+        </div>
+        <div class="game-container">
+            <div class="output">Play Now</div>
+            <div class="final-result" id="finalResult"></div>
+            <!-- Player Selection Section -->
+            <div class="play">
+                <button class="rock" id="rock">Rock</button>
+                <button class="paper" id="paper">Paper</button>
+                <button class="scissors" id="scissors">Scissors</button>
+            </div>
+            <!-- The table element shows the round scores -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Player</th>
+                        <th>Computer</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="playerId">0</td>
+                        <td id="computerId">0</td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- Final Judgement -->
+            <a id="playAgain" class="playAgain">Play Again</a>
+        </div>
+    </div>
+    <!-- <script src="scipt.js"></script> -->
 </body>
 </html>
